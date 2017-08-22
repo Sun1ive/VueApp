@@ -10,22 +10,20 @@
 </template>
 
 <script>
-	export default {
-		data(){
-			return {
-				domainName: "",
-			}
-		},
-		methods: {
-			submitted(){
-				if (this.domainName !== "") {
-					alert(this.domainName);
-				} else {
-					alert("input correct value!")
-				}
-			}
+export default {
+	data(){
+		return {
+			domainName: ""
+		}
+	},
+	methods: {
+		submitted(){
+			// ajax request
+			alert(this.domainName);
 		}
 	}
+}
+
 </script>
 
 <style lang="sass">

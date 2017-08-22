@@ -5,6 +5,7 @@ import About from './components/About.vue'
 import Contact from './components/Contact.vue'
 import Home from './components/Home.vue'
 
+
 Vue.use(VueRouter);
 
 const routes = [

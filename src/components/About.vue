@@ -5,12 +5,12 @@
 				<span class="small">What we are</span></h1>
 		</section>
 		<section class="details">
+			<div class="banner">
+				<span></span>
+				<h3>Our</h3>
+				<h2>Details</h2>
+			</div>
 			<div class="container">
-				<div class="banner">
-					<span></span>
-					<h3>Our</h3>
-					<h2>Details</h2>
-				</div>
 				<div class="wrapper">
 					<img class="image" src="http://placehold.it/525x260" alt="image">
 					<div class="block"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dolor, facilis esse, voluptates dicta excepturi accusantium officiis voluptate velit non vel, possimus adipiscir, facilis esse, voluptates dicta excepturi accusantium officiis voluptate velit non vel, possimus adipisci soluta doloremque! Quis minus eius maxime inventore.</p>
@@ -24,6 +24,21 @@
 		</section>
 		<section class="domain">
 			<app-domain></app-domain>
+		</section>
+		<section class="team">
+			<div class="member">
+				<img src="https://placehold.it/260x260" alt="image">
+				<div class="info">
+					<div class="name">Sara Nair <span>CEO</span></div>
+					<nav>
+						<ul class="socials">
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
 		</section>
 	</main>
 </template>
@@ -43,6 +58,7 @@ export default {
 </script>
 
 <style lang="sass">
+
 .banner
 	padding: 30px 0
 	margin: 0 auto
@@ -80,17 +96,17 @@ export default {
 .details
 	min-height: 520px
 	background-color: #fff
-	padding: 40px
+	padding: 40px 0
 	.wrapper
 		display: flex
-		padding: 30px 0
+		padding: 30px
 		.image
 			width: 100%
 			height: 100%
 		p
 			display: inline-block
 			flex-basis: 50%
-			width: 85%
+			width: 88%
 			margin: 5px 0 36px 40px
 			color: #a0a9b6;
 
@@ -113,4 +129,11 @@ export default {
 	align-items: center
 	background-color: #e7f4f8
 	min-height: 230px
+
+.team
+	min-height: 1020px
+	background-color: #fff
+	a
+		position: relative
+		font-family: "FontAwesome"
 </style>
