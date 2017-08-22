@@ -1,3 +1,4 @@
+
 body {
 	font-family: PT Sans;
 	margin: 0;
@@ -115,4 +116,15 @@ footer {
 .footer .footer-menu ul li a {
 	text-transform: uppercase;
 	color: #c0c0c0;
+	transition: .3s;
+}
+.footer .footer-menu ul li a:hover {
+	color: #000;
+}
+.footer .footer-menu ul li {
+	padding: 7px 0;
+}
+.footer-menu nav ul h2 {
+	color: #c0c0c0;
+	font-family: Arial, sans-serif;
 }

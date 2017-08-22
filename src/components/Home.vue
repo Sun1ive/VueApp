@@ -23,8 +23,8 @@
 	<section class="benefit">
 		<div class="banner">
 			<span></span>
-			<h3>Get</h3>
-			<h2>Domain</h2>
+			<h3>Our</h3>
+			<h2>Benefits</h2>
 		</div>
 		<div class="container">
 			<div class="container-item">
@@ -111,36 +111,35 @@
 			</div>
 		</section>
 	<section class="subscribe">
-		<div class="text">
-			<h2>sign up your</h2>
-			<p>newsletter</p>
-		</div>
-		<input type="text" name="" id="" placeholder="Enter your domain name" v-model="domainName">
-		<div class="button red" @click="submitted">Sign up now</div>
+		<app-domain></app-domain>
 	</section>
 	</main>
 </template>
 
 <script>
+	import domainForm from "./Domain.vue"
 export default {
+	components: {
+			"app-domain": domainForm
+	},
 	data() {
 		return {
 			domain: "",
-			domainName: "",
 			duration: "(0-1 year)",
 			dot: ".com",
 			data: "",
+			domainName: "",
 			options: [
 			{ text: "(0-1 year)"},
 			{ text: "(1-2 years)"},
 			{ text: "(2-3 years)"},
-			{ text: "(3-4 years)"},
+			{ text: "(3-4 years)"}
 			],
 			dotOptions: [
 			{ text: ".com" },
 			{ text: ".ru" },
 			{ text: ".net" },
-			{ text: ".com.ua" },
+			{ text: ".com.ua" }
 			]
 		}
 	},
@@ -153,7 +152,11 @@ export default {
 			this.domain = "";
 		},
 		submitted(){
-			alert(this.domainName);
+			if (this.domainName !== "") {
+				alert(this.domainName);
+			} else {
+				alert("input correct value!")
+			}
 		}
 	}
 }
@@ -218,9 +221,14 @@ ul
 	padding: 10px 30px
 	margin: 25px auto
 	cursor: pointer
+	transition: .3s
+	&:hover
+		background-color: #52cbf8 - 50%
 
 .red
 	background-color: #ff8261
+	&:hover
+		background-color: #ff8261 - 50%
 
 
 .domain
@@ -254,6 +262,7 @@ ul
 .benefit
 	background-color: #fff
 	min-height: 200px
+	border-bottom: 1px solid #c0c0c0
 	.container
 		display: flex
 		flex-wrap: wrap
@@ -281,25 +290,8 @@ ul
 
 .subscribe
 	background-color: #e7f4f8
-	min-height: 200px
+	min-height: 230px
 	display: flex
 	justify-content: center;
 	align-items: center
-	.text
-		margin: 0 15px
-		text-transform: uppercase
-		h2
-			font-size: 20px
-		p
-			margin: 0
-			font-size: 30px
-			margin-top: -7px
-			font-weight: bold
-	input
-		height: 42px
-		font-size: 14px
-		padding-left: 20px
-		width: 400px
-	.button 
-		margin: 0
 </style>
