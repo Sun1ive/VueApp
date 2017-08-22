@@ -8,20 +8,17 @@
 		</div>
 		<form>
 			<input type="text" name="domainName" placeholder="Enter your domain name" required v-model="domain">
-			<select name="selection">
-				<option>Year(0-1 year)</option>
-				<option>Year(1-2 years)</option>
-				<option>Year(2-3 years)</option>
-				<option>Year(3-4 years)</option>
+			<select name="selection" v-model="duration">
+				<option v-for="option in options">{{ option.text }}</option>
 			</select>
-			<select name="dot">
-				<option>.com</option>
-				<option>.ru</option>
-				<option>.net</option>
-				<option>.com.ua</option>
+			<select name="dot" v-model="dot">
+				<option v-for="key in dotOptions">
+					{{ key.text }}
+				</option>
 			</select>
 			<div class="button red" @click="submitForm">Submit</div>
 		</form>
+		<p>{{  data }}</p>
 	</section>
 	<section class="benefit">
 		<div class="banner">
@@ -118,8 +115,8 @@
 			<h2>sign up your</h2>
 			<p>newsletter</p>
 		</div>
-		<input type="text" name="" id="" placeholder="Enter your domain name">
-		<div class="button red">Sign up now</div>
+		<input type="text" name="" id="" placeholder="Enter your domain name" v-model="domainName">
+		<div class="button red" @click="submitted">Sign up now</div>
 	</section>
 	</main>
 </template>
@@ -129,8 +126,22 @@ export default {
 	data() {
 		return {
 			domain: "",
-			duration: "Some data there",
-			dot: "Some data there"
+			domainName: "",
+			duration: "(0-1 year)",
+			dot: ".com",
+			data: "",
+			options: [
+			{ text: "(0-1 year)"},
+			{ text: "(1-2 years)"},
+			{ text: "(2-3 years)"},
+			{ text: "(3-4 years)"},
+			],
+			dotOptions: [
+			{ text: ".com" },
+			{ text: ".ru" },
+			{ text: ".net" },
+			{ text: ".com.ua" },
+			]
 		}
 	},
 	methods: {
@@ -138,8 +149,11 @@ export default {
 			alert("clicked");
 		},
 		submitForm(){
-			let data = `${this.domain} + ${this.dot}`
-			console.log(data);
+			this.data = `${this.domain}${this.dot} for ${this.duration}`
+			this.domain = "";
+		},
+		submitted(){
+			alert(this.domainName);
 		}
 	}
 }
@@ -155,7 +169,8 @@ ul
 	background-color: #fff
 
 .banner
-	margin: 25px 15px
+	margin: 25px auto
+	text-align: center
 	text-transform: uppercase
 	h3
 		color: #8da1a7
@@ -166,6 +181,7 @@ ul
 		width: 21px
 		background-color: #fb6b45
 		display: block
+		margin: 0 auto
 		margin-bottom: 10px;
 
 .container
@@ -210,9 +226,12 @@ ul
 .domain
 	background-color: #e7f4f8
 	min-height: 200px
+	p
+		text-align: center
+		margin: 0
 	.banner
-		padding-top: 25px
-		margin: 0 0 0 15px
+		padding: 25px 0
+		margin: 0
 	form
 		display: flex
 		justify-content: center
@@ -257,8 +276,8 @@ ul
 					color: orange
 
 	.banner
-		margin: 0 0 0 15px
-		padding: 25px 0
+		margin: -1px 0
+		padding: 55px 0 25px 0
 
 .subscribe
 	background-color: #e7f4f8

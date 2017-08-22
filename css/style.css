@@ -103,10 +103,14 @@ footer {
 	font-size: 30px;
 	margin-left: 20px;
 }
+
 .footer .footer-menu {
+	flex-basis: 70%;
+}
+
+.footer .footer-menu nav {
 	display: flex;
 	justify-content: space-around;
-	flex-basis: 70%;
 }
 .footer .footer-menu ul li a {
 	text-transform: uppercase;
