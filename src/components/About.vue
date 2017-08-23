@@ -1,10 +1,10 @@
 <template>
 	<main>
-		<section class="about">
+	<section class="about">
 			<h1><span class="lg">about us</span>
 				<span class="small">What we are</span></h1>
-		</section>
-		<section class="details">
+			</section>
+	<section class="details">
 			<div class="banner">
 				<span></span>
 				<h3>Our</h3>
@@ -21,25 +21,139 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="domain">
-			<app-domain></app-domain>
-		</section>
-		<section class="team">
-			<div class="member">
-				<img src="https://placehold.it/260x260" alt="image">
-				<div class="info">
-					<div class="name">Sara Nair <span>CEO</span></div>
-					<nav>
-						<ul class="socials">
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-						</ul>
-					</nav>
+			</section>
+	<section class="team">
+		<div class="banner">
+				<span></span>
+				<h3>Our</h3>
+				<h2>Details</h2>
+			</div>
+			<div class="containerTeam">
+				<div class="member">
+					<img src="https://placehold.it/260x260" alt="image">
+					<div class="info">
+						<div class="name">
+							<span class="userName">Sara Nair</span><span class="job">CEO</span>
+						</div>
+						<nav>
+							<ul class="socials">
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="member">
+					<img src="https://placehold.it/260x260" alt="image">
+					<div class="info">
+						<div class="name">
+							<span class="userName">Sara Nair</span><span class="job">CEO</span>
+						</div>
+						<nav>
+							<ul class="socials">
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="member">
+					<img src="https://placehold.it/260x260" alt="image">
+					<div class="info">
+						<div class="name">
+							<span class="userName">Sara Nair</span><span class="job">CEO</span>
+						</div>
+						<nav>
+							<ul class="socials">
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="member">
+					<img src="https://placehold.it/260x260" alt="image">
+					<div class="info">
+						<div class="name">
+							<span class="userName">Sara Nair</span><span class="job">CEO</span>
+						</div>
+						<nav>
+							<ul class="socials">
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="member">
+					<img src="https://placehold.it/260x260" alt="image">
+					<div class="info">
+						<div class="name">
+							<span class="userName">Sara Nair</span><span class="job">CEO</span>
+						</div>
+						<nav>
+							<ul class="socials">
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="member">
+					<img src="https://placehold.it/260x260" alt="image">
+					<div class="info">
+						<div class="name">
+							<span class="userName">Sara Nair</span><span class="job">CEO</span>
+						</div>
+						<nav>
+							<ul class="socials">
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="member">
+					<img src="https://placehold.it/260x260" alt="image">
+					<div class="info">
+						<div class="name">
+							<span class="userName">Sara Nair</span><span class="job">CEO</span>
+						</div>
+						<nav>
+							<ul class="socials">
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="member">
+					<img src="https://placehold.it/260x260" alt="image">
+					<div class="info">
+						<div class="name">
+							<span class="userName">Sara Nair</span><span class="job">CEO</span>
+						</div>
+						<nav>
+							<ul class="socials">
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</section>
+	<section class="domain">
+			<app-domain></app-domain>
+			</section>
 	</main>
 </template>
 
@@ -58,6 +172,7 @@ export default {
 </script>
 
 <style lang="sass">
+@import "../assets/font-awesome.css"
 
 .banner
 	padding: 30px 0
@@ -133,7 +248,52 @@ export default {
 .team
 	min-height: 1020px
 	background-color: #fff
-	a
-		position: relative
-		font-family: "FontAwesome"
+	.banner
+		padding-top: 55px
+		margin-top: 0
+
+.containerTeam
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+
+
+	.member
+		max-width: 260px
+		height: 100%
+		padding: 25px 0
+		.name
+			font-family: Arial
+			margin-left: 5px
+		.userName
+			display: block
+			color: #556b72;
+			font-weight: bold
+			text-transform: uppercase
+		.job
+			color: #a0a9b6;
+	.info
+		display: flex
+		justify-content: space-between
+		align-items: center
+	ul
+		padding: 0
+		display: flex
+	li
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 31px
+		width: 31px
+		border: 1px solid #d8e6ea;
+		margin-left: 5px
+		a
+			position: relative
+			color: #8f9fa4;
+			padding: 8px
+			transition: .3s;
+			&:hover
+				color: #8f9fa4 - 50%
+
+
 </style>

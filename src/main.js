@@ -4,6 +4,8 @@ import VueRouter from 'vue-router'
 import About from './components/About.vue'
 import Contact from './components/Contact.vue'
 import Home from './components/Home.vue'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 
 
 Vue.use(VueRouter);
@@ -19,9 +21,22 @@ const router = new VueRouter({
 });
 
 new Vue({
+	el: "#appmenu",
+	components: {
+		"app-header": Header
+	}
+});
+
+new Vue({
   el: '#app',
   router,
   render: h => h(App)
 });
 
+new Vue({
+	el: "#appfooter",
+	components: {
+		"app-footer": Footer
+	}
+});
 
