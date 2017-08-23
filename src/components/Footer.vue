@@ -44,7 +44,7 @@
 </script>
 
 <style lang="sass">
-@import "../assets/font-awesome.css"
+@import "../assets/font-awesome.min.css"
 
 .socials
 	display: flex
@@ -52,7 +52,6 @@
 	align-items: center
 	justify-content: space-around
 	a
-		// margin: 0 15px
 		font-size: 30px
 
 

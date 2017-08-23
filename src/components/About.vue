@@ -36,7 +36,7 @@
 							<span class="userName">Sara Nair</span><span class="job">CEO</span>
 						</div>
 						<nav>
-							<ul class="socials">
+							<ul class="mySocials">
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-google"></i></a></li>
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -51,7 +51,7 @@
 							<span class="userName">Sara Nair</span><span class="job">CEO</span>
 						</div>
 						<nav>
-							<ul class="socials">
+							<ul class="mySocials">
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-google"></i></a></li>
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -66,7 +66,7 @@
 							<span class="userName">Sara Nair</span><span class="job">CEO</span>
 						</div>
 						<nav>
-							<ul class="socials">
+							<ul class="mySocials">
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-google"></i></a></li>
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -81,7 +81,7 @@
 							<span class="userName">Sara Nair</span><span class="job">CEO</span>
 						</div>
 						<nav>
-							<ul class="socials">
+							<ul class="mySocials">
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-google"></i></a></li>
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -96,7 +96,7 @@
 							<span class="userName">Sara Nair</span><span class="job">CEO</span>
 						</div>
 						<nav>
-							<ul class="socials">
+							<ul class="mySocials">
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-google"></i></a></li>
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -111,7 +111,7 @@
 							<span class="userName">Sara Nair</span><span class="job">CEO</span>
 						</div>
 						<nav>
-							<ul class="socials">
+							<ul class="mySocials">
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-google"></i></a></li>
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -126,7 +126,7 @@
 							<span class="userName">Sara Nair</span><span class="job">CEO</span>
 						</div>
 						<nav>
-							<ul class="socials">
+							<ul class="mySocials">
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-google"></i></a></li>
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -141,7 +141,7 @@
 							<span class="userName">Sara Nair</span><span class="job">CEO</span>
 						</div>
 						<nav>
-							<ul class="socials">
+							<ul class="mySocials">
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-google"></i></a></li>
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -172,7 +172,7 @@ export default {
 </script>
 
 <style lang="sass">
-@import "../assets/font-awesome.css"
+@import "../assets/font-awesome.min.css"
 
 .banner
 	padding: 30px 0
@@ -247,7 +247,7 @@ export default {
 
 .team
 	min-height: 1020px
-	background-color: #fff
+	background-color: #fff;
 	.banner
 		padding-top: 55px
 		margin-top: 0
@@ -276,6 +276,7 @@ export default {
 		display: flex
 		justify-content: space-between
 		align-items: center
+		margin-top: 10px
 	ul
 		padding: 0
 		display: flex

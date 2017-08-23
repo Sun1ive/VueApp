@@ -1,123 +1,122 @@
 <template>
 	<main>
-	<section class="domain">
-		<div class="banner">
-			<span></span>
-			<h3>Get</h3>
-			<h2>Domain</h2>
-		</div>
-		<form>
-			<input type="text" name="domainName" placeholder="Enter your domain name" required v-model="domain">
-			<select name="selection" v-model="duration">
-				<option v-for="option in options">{{ option.text }}</option>
-			</select>
-			<select name="dot" v-model="dot">
-				<option v-for="key in dotOptions">
-					{{ key.text }}
-				</option>
-			</select>
-			<div class="button red" @click="submitForm">Submit</div>
-		</form>
-		<p>{{  data }}</p>
-	</section>
-	<section class="benefit">
-		<div class="banner">
-			<span></span>
-			<h3>Our</h3>
-			<h2>Benefits</h2>
-		</div>
-		<div class="container">
-			<div class="container-item">
-				<h2>99.9% Uptime</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut hic sint officia tempora deserunt at. Rem sequi, laborum eaque vitae.</p>
+		<section class="getDomain">
+			<div class="banner">
+				<h3>Submit</h3>
+				<h2>Domain</h2>
 			</div>
-			<div class="container-item">
-				<h2>99.9% Uptime</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut hic sint officia tempora deserunt at. Rem sequi, laborum eaque vitae.</p>
+			<form>
+				<input type="text" name="domainName" placeholder="Enter your domain name" required v-model="domain">
+				<select name="selection" v-model="duration">
+					<option v-for="option in options">{{ option.text }}</option>
+				</select>
+				<select name="dot" v-model="dot">
+					<option v-for="key in dotOptions">
+						{{ key.text }}
+					</option>
+				</select>
+				<div class="button red" @click="submitForm">Submit</div>
+			</form>
+		</section>
+		<section class="benefit">
+			<div class="banner">
+				<span></span>
+				<h3>Our</h3>
+				<h2>Benefits</h2>
 			</div>
-			<div class="container-item">
-				<h2>99.9% Uptime</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut hic sint officia tempora deserunt at. Rem sequi, laborum eaque vitae.</p>
-			</div>
-			<div class="container-item">
-				<h2>99.9% Uptime</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut hic sint officia tempora deserunt at. Rem sequi, laborum eaque vitae.</p>
-			</div>
-			<div class="container-item">
-				<h2>99.9% Uptime</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut hic sint officia tempora deserunt at. Rem sequi, laborum eaque vitae.</p>
-			</div>
-			<div class="container-item">
-				<h2>99.9% Uptime</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut hic sint officia tempora deserunt at. Rem sequi, laborum eaque vitae.</p>
-			</div>
-		</div>
-	</section>
-	<section class="home">
-		<div class="banner">
-			<span></span>
-			<h3>Our</h3>
-			<h2>Hosting</h2>
-		</div>
 			<div class="container">
-				<div class="box">
-					<h3>$5 per month</h3>
-					<div class="button" @click="click">Standart Plan</div>
-					<ul>
-						<li>10GB Disk Space</li>
-						<li>1TB Bandwidth</li>
-						<li>Free DDoS Protection</li>
-						<li>Free Daily Backups</li>
-						<li>Managed Hosting</li>
-					</ul>
-					<div class="button red" @click="click">SignUp</div>
+				<div class="container-item">
+					<h2>99.9% Uptime</h2>
+					<p>{{ paraText }}</p>
 				</div>
-				<div class="box">
-					<h3>$5 per month</h3>
-					<div class="button" @click="click">Standart Plan</div>
-					<ul>
-						<li>10GB Disk Space</li>
-						<li>1TB Bandwidth</li>
-						<li>Free DDoS Protection</li>
-						<li>Free Daily Backups</li>
-						<li>Managed Hosting</li>
-					</ul>
-					<div class="button red" @click="click">SignUp</div>
+				<div class="container-item">
+					<h2>99.9% Uptime</h2>
+					<p>{{ paraText }}</p>
 				</div>
-				<div class="box">
-					<h3>$5 per month</h3>
-					<div class="button" @click="click">Standart Plan</div>
-					<ul>
-						<li>10GB Disk Space</li>
-						<li>1TB Bandwidth</li>
-						<li>Free DDoS Protection</li>
-						<li>Free Daily Backups</li>
-						<li>Managed Hosting</li>
-					</ul>
-					<div class="button red" @click="click">SignUp</div>
+				<div class="container-item">
+					<h2>99.9% Uptime</h2>
+					<p>{{ paraText }}</p>
 				</div>
-				<div class="box">
-					<h3>$5 per month</h3>
-					<div class="button" @click="click">Standart Plan</div>
-					<ul>
-						<li>10GB Disk Space</li>
-						<li>1TB Bandwidth</li>
-						<li>Free DDoS Protection</li>
-						<li>Free Daily Backups</li>
-						<li>Managed Hosting</li>
-					</ul>
-					<div class="button red" @click="click">SignUp</div>
+				<div class="container-item">
+					<h2>99.9% Uptime</h2>
+					<p>{{ paraText }}</p>
+				</div>
+				<div class="container-item">
+					<h2>99.9% Uptime</h2>
+					<p>{{ paraText }}</p>
+				</div>
+				<div class="container-item">
+					<h2>99.9% Uptime</h2>
+					<p>{{ paraText }}</p>
 				</div>
 			</div>
 		</section>
-	<section class="subscribe">
+		<section class="home">
+			<div class="banner">
+				<span></span>
+				<h3>Our</h3>
+				<h2>Hosting</h2>
+			</div>
+				<div class="container">
+					<div class="box">
+						<h3>$5 per month</h3>
+						<div class="button" @click="click">Standart Plan</div>
+						<ul>
+							<li>10GB Disk Space</li>
+							<li>1TB Bandwidth</li>
+							<li>Free DDoS Protection</li>
+							<li>Free Daily Backups</li>
+							<li>Managed Hosting</li>
+						</ul>
+						<div class="button red" @click="click">SignUp</div>
+					</div>
+					<div class="box">
+						<h3>$5 per month</h3>
+						<div class="button" @click="click">Standart Plan</div>
+						<ul>
+							<li>10GB Disk Space</li>
+							<li>1TB Bandwidth</li>
+							<li>Free DDoS Protection</li>
+							<li>Free Daily Backups</li>
+							<li>Managed Hosting</li>
+						</ul>
+						<div class="button red" @click="click">SignUp</div>
+					</div>
+					<div class="box">
+						<h3>$5 per month</h3>
+						<div class="button" @click="click">Standart Plan</div>
+						<ul>
+							<li>10GB Disk Space</li>
+							<li>1TB Bandwidth</li>
+							<li>Free DDoS Protection</li>
+							<li>Free Daily Backups</li>
+							<li>Managed Hosting</li>
+						</ul>
+						<div class="button red" @click="click">SignUp</div>
+					</div>
+					<div class="box">
+						<h3>$5 per month</h3>
+						<div class="button" @click="click">Standart Plan</div>
+						<ul>
+							<li>10GB Disk Space</li>
+							<li>1TB Bandwidth</li>
+							<li>Free DDoS Protection</li>
+							<li>Free Daily Backups</li>
+							<li>Managed Hosting</li>
+						</ul>
+						<div class="button red" @click="click">SignUp</div>
+					</div>
+				</div>
+			</section>
+		<section class="subscribe">
 		<app-domain></app-domain>
-	</section>
+			</section>
 	</main>
 </template>
 
 <script>
-	import domainForm from "./Domain.vue"
+import domainForm from "./Domain.vue"
+
 export default {
 	components: {
 			"app-domain": domainForm
@@ -128,7 +127,7 @@ export default {
 			duration: "(0-1 year)",
 			dot: ".com",
 			data: "",
-			domainName: "",
+			paraText: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut hic sint officia tempora deserunt at. Rem sequi, laborum eaque vitae.",
 			options: [
 			{ text: "(0-1 year)"},
 			{ text: "(1-2 years)"},
@@ -163,6 +162,8 @@ export default {
 </script>
 
 <style lang="sass">
+@import "../assets/font-awesome.min.css"
+
 ul
 	padding: 0
 	margin: 0
@@ -231,15 +232,30 @@ ul
 		background-color: #ff8261 - 50%
 
 
-.domain
+.getDomain
 	background-color: #e7f4f8
 	min-height: 200px
+	display: flex
+	justify-content: center
 	p
 		text-align: center
 		margin: 0
 	.banner
-		padding: 25px 0
+		display: flex
+		flex-flow: column wrap
+		align-items: center
+		justify-content: center
 		margin: 0
+		h3
+			position: relative
+			&:before
+				font-family: FontAwesome
+				position: absolute
+				top: -25px
+				left: -35px
+				content: "\f002"
+				color: orange
+				font-size: 30px
 	form
 		display: flex
 		justify-content: center
@@ -268,6 +284,7 @@ ul
 		flex-wrap: wrap
 		justify-content: center
 		padding: 30px 0
+					
 		&-item
 			margin: 5px 10px
 			width: calc(100% / 3 - 80px)
@@ -279,9 +296,11 @@ ul
 				font-weight: bold
 				text-transform: uppercase
 				&:before
+					font-family: FontAwesome
+					content: "\f013"
 					margin-right: 10px
-					content: "\2690"
-					font-size: 60px
+					// content: "\2690"
+					font-size: 40px
 					color: orange
 
 	.banner
